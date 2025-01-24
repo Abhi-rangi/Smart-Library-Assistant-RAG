@@ -3,7 +3,7 @@ from langchain.vectorstores import FAISS
 from langchain.document_loaders import CSVLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-
+import time
 # List of CSV file paths
 DATA_PATHS = [
     "data/textbook_details_no_dup.csv",
@@ -21,7 +21,6 @@ def create_vector_db():
         loader = CSVLoader(file_path=data_path,encoding="utf-8")
         documents = loader.load()
         all_documents.extend(documents)  # Combine documents from all files
-
     # Optional: Split documents into manageable chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     texts = text_splitter.split_documents(all_documents)
@@ -31,7 +30,6 @@ def create_vector_db():
 
     # Create a FAISS vector store from the combined documents and embeddings
     db = FAISS.from_documents(texts, embeddings)
-
     # Save the FAISS index locally
     db.save_local(DB_FAISS_PATH)
 
