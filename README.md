@@ -1,8 +1,4 @@
-• Identified limitations with traditional fine-tuning methods when developing a library chatbot and pivoted to
-Retrieval-Augmented Generation (RAG), ensuring more accurate, context-aware, and personalized responses.
-• Integrated FAISS vector storage for efficient semantic retrieval and leveraged HuggingFaceEmbeddings to sig-
-nificantly boost document matching accuracy, enhancing user satisfaction.
-• Optimized chatbot responsiveness by implementing Redis for caching, while orchestrating conversational flows
-and dynamic deployment using Chainlit, improving interaction quality and scalability.
-• Built a robust ConversationalRetrievalChain architecture with a large language model, ensuring seamless context
-maintenance across user interactions and delivering a highly adaptive user experience.
+### Identified limitations with traditional fine-tuning methods when developing a library chatbot and pivoted to Retrieval-Augmented Generation (RAG), ensuring more accurate, context-aware, and personalized responses.
+### Integrated FAISS vector storage for efficient semantic retrieval and leveraged HuggingFaceEmbeddings to significantly boost document matching accuracy, enhancing user satisfaction.
+### Optimized chatbot responsiveness by implementing Redis for caching, while orchestrating conversational flows and dynamic deployment using Chainlit, improving interaction quality and scalability.
+### Built a robust ConversationalRetrievalChain architecture with a large language model, ensuring seamless context maintenance across user interactions and delivering a highly adaptive user experience.
