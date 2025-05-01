@@ -23,8 +23,7 @@ An intelligent chatbot system designed to help users find and learn about open t
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Abhi-rangi/Smart-Library-Assistant-RAG.git
 ```
 
 2. Create and activate a virtual environment:
